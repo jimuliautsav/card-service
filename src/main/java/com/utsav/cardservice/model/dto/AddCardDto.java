@@ -2,6 +2,7 @@ package com.utsav.cardservice.model.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.utsav.cardservice.model.CreditCard;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -14,6 +15,7 @@ import javax.validation.constraints.Size;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 public class AddCardDto {
 
     @JsonProperty(required = true)
