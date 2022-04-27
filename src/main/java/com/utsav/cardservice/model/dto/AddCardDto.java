@@ -12,6 +12,12 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Positive;
 import javax.validation.constraints.Size;
 
+/**
+ * DTO to hold credit card details in request
+ *
+ * @author UtsavJ
+ */
+
 @Getter
 @Setter
 @NoArgsConstructor

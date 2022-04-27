@@ -9,6 +9,6 @@ package com.utsav.cardservice.util;
 public class Constants {
 
     public static final String INVALID_CARD_NUMBER = "Invalid card number";
-    public static final String INVALID_CREDIT_CARD_INPUT_VALUE = " is invalid. Please provide input!";
+    public static final String INVALID_CREDIT_CARD_INPUT_VALUE = " is invalid. Please provide valid input!";
     public static final String INTERNAL_SERVER_ERROR = "We are dealing with an unexpected error";
 }

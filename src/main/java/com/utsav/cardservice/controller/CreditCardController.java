@@ -71,9 +71,9 @@ public class CreditCardController {
     @PostMapping(consumes = APPLICATION_JSON_VALUE)
     public ResponseEntity<CreditCard> addCreditCard(@Valid @RequestBody AddCardDto addCardDto) throws InvalidCardNumberException {
         logger.info("Processing request to add new credit card!");
+
         CreditCard creditCardResponse = creditCardService.save(addCardDto);
         return ResponseEntity.status(HttpStatus.CREATED).body(creditCardResponse);
-
     }
 
     private Map<String, Object> prepareResponse(Page<CreditCard> pageResponse) {

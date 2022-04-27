@@ -29,15 +29,9 @@ class CreditCardServiceTest {
 
     private CreditCardService creditCardService;
 
-    CreditCard creditCard1 = new CreditCard("Test","4541380540412446",BigDecimal.ZERO,3000);
-
     @BeforeEach
     void setUp() {
         creditCardService = new CreditCardServiceImpl(creditCardRepositoryMock);
-    }
-
-    @AfterEach
-    void tearDown() {
     }
 
     @Test
@@ -69,14 +63,12 @@ class CreditCardServiceTest {
 
     @Test
     void saveCreditCardInvalidCardNumber_exception() throws InvalidCardNumberException {
-        //Given
         AddCardDto addCardDto = new AddCardDto("Test","4541380540412449",3000);
 
-        //When
         InvalidCardNumberException invalidCardNumberException = assertThrows(InvalidCardNumberException.class,
                 () -> creditCardService.save(addCardDto));
-        //Then
-        assertEquals(addCardDto.getCardNumber()+" is not a valid card number", invalidCardNumberException.getMessage());
+
+        assertEquals(addCardDto.getCardNumber()+" is invalid. Please provide valid input!", invalidCardNumberException.getMessage());
     }
 
     private CreditCard createCreditCard1(){

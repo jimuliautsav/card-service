@@ -1,6 +1,5 @@
 package com.utsav.cardservice.service;
 
-import com.utsav.cardservice.exception.BadRequestException;
 import com.utsav.cardservice.exception.InvalidCardNumberException;
 import com.utsav.cardservice.model.CreditCard;
 import com.utsav.cardservice.model.dto.AddCardDto;

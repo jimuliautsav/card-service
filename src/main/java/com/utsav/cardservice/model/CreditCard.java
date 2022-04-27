@@ -9,6 +9,13 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 import java.math.BigDecimal;
 
+
+/**
+ * Entity class for credit card
+ *
+ * @author UtsavJ
+ */
+
 @Entity
 @Table(name = "credit_card")
 @Getter
@@ -27,7 +34,6 @@ public class CreditCard extends BaseEntity{
 
     @Column(name = "balance", nullable = false, length = 50)
     private BigDecimal balance = BigDecimal.ZERO;
-
 
     @Column(name = "card_limit", nullable = false, length = 50)
     private Integer limit;

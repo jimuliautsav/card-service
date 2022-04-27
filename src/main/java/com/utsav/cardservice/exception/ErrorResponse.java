@@ -7,10 +7,15 @@ import org.springframework.http.HttpStatus;
 
 import java.util.Date;
 
+/**
+ * Class to build custom error response
+ *
+ * @author UtsavJ
+ */
+
 @Getter
 @Setter
 public class ErrorResponse {
-    // customizing timestamp serialization format
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy hh:mm:ss")
     private Date timestamp;
 

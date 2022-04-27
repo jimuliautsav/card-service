@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * Config class for to enable Swagger
+ * Config class for to Open API
  *
  * @author UtsavJ
  */
